@@ -41,9 +41,14 @@
 <div class="rt">
    <img src="public/images/rotate-phone.gif" class="img-responsive fill">
  <h4>Please rotate and switch on auto rotate in settings to see this expo</h4>
-<button onclick="rotate(this)" id="button">
+<!-- <button onclick="rotate(this)" id="button">
   Swith to Landscape
+</button> -->
+
+<button onclick="start()">
+  Start
 </button>
+
 <!--<button onclick="screen.orientation.unlock()">
   Unlock
 </button> -->
@@ -729,7 +734,36 @@
        });
          
 </script>
+
+
 <script>
+function start() {
+  /* Start application when in correct orientation */
+}
+async function rotate() {
+  try {
+    await screen.orientation.lock("landscape");
+    start();
+  } catch (err) {
+    console.error(err);
+  }
+  const matchLandscape = matchMedia("(orientation: landscape)");
+  if (matchLandscape.matches) return start();
+  addEventListener("orientationchange", function listener() {
+    matchLandscape.addListener(function mediaChange(e) {
+      if (!e.matches) return;
+      removeEventListener("orientationchange", listener);
+      matchLandscape.removeListener(mediaChange);
+      start();
+    });
+  });
+  alert("To start, please rotate your screen to landscape.");
+}
+</script>
+
+
+
+<!-- <script>
 function fullScreenCheck() {
   if (document.fullscreenElement) return;
   return document.documentElement.requestFullscreen();
@@ -770,7 +804,7 @@ window.addEventListener("load", () => {
   show();
   updateDetails(document.getElementById("button"));
 });
-</script>
+</script> -->
 </div>
 
 
