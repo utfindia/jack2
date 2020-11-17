@@ -29,9 +29,14 @@
 <div class="rt">
    <img src="public/images/rotate-phone.gif" class="img-responsive fill">
  <h4>Please rotate and switch on auto rotate in settings to see this expo</h4>
-<button onclick="rotate(this)" id="button">
+<!-- <button onclick="rotate(this)" id="button">
   Swith to Landscape
+</button> -->
+
+<button onclick="start()">
+  Start
 </button>
+
 <!--<button onclick="screen.orientation.unlock()">
   Unlock
 </button> -->

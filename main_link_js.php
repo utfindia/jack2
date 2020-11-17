@@ -58,7 +58,36 @@
        });
          
 </script>
+
+
 <script>
+function start() {
+  /* Start application when in correct orientation */
+}
+async function rotate() {
+  try {
+    await screen.orientation.lock("landscape");
+    start();
+  } catch (err) {
+    console.error(err);
+  }
+  const matchLandscape = matchMedia("(orientation: landscape)");
+  if (matchLandscape.matches) return start();
+  addEventListener("orientationchange", function listener() {
+    matchLandscape.addListener(function mediaChange(e) {
+      if (!e.matches) return;
+      removeEventListener("orientationchange", listener);
+      matchLandscape.removeListener(mediaChange);
+      start();
+    });
+  });
+  alert("To start, please rotate your screen to landscape.");
+}
+</script>
+
+
+
+<!-- <script>
 function fullScreenCheck() {
   if (document.fullscreenElement) return;
   return document.documentElement.requestFullscreen();
@@ -99,4 +128,4 @@ window.addEventListener("load", () => {
   show();
   updateDetails(document.getElementById("button"));
 });
-</script>
+</script> -->
