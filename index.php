@@ -77,7 +77,7 @@
 
     <section class="lobby-backbg">
 
-     <div class="fill" style="background-image:url('public/images/lobby-bg.jpg')">
+     <div class="fill">
 
       <div class="head-title top-space">
 
@@ -110,25 +110,25 @@
                      <!-- Slid1 -->
                      <div class="owl-item">
                         
-                    <img src="public/images/MIJEX-Banner.jpg" class="img-responsive fill">
+                    <img src="public/images/MIJEX-Banner.jpg" class="img-responsive fill lazyOwl">
                       
                      </div>
                      <!-- Slid2 -->
                      <div class="owl-item">
                    
-                         <img src="public/images/1024_900.jpg" class="img-responsive fill">
+                         <img src="public/images/1024_900.jpg" class="img-responsive fill lazyOwl">
                       
                      </div>
 
                       <div class="owl-item">
         
-                         <img src="public/images/exhibition.jpg" class="fill img-responsive">
+                         <img src="public/images/exhibition.jpg" class="fill img-responsive lazyOwl">
                      
                      </div>
 
                       <div class="owl-item">
                         
-                         <img src="public/images/er.jpg" class="fill img-responsive">
+                         <img src="public/images/er.jpg" class="fill img-responsive lazyOwl">
                       
                      </div>
 
@@ -150,7 +150,7 @@
                      <!-- Slid1 -->
                      <div class="owl-item">
                         
-                     <img src="public/images/er.jpg" class="fill img-responsive">
+                     <img src="public/images/er.jpg" class="fill img-responsive lazyOwl">
                       
                      </div>
                      <!-- Slid2 -->
@@ -158,13 +158,13 @@
                    
                         
 
-                         <img src="public/images/exhibition.jpg" class="fill img-responsive">
+                         <img src="public/images/exhibition.jpg" class="fill img-responsive lazyOwl">
                       
                      </div>
 
                       <div class="owl-item">
         
-                          <img src="public/images/1024_900.jpg" class="img-responsive fill">
+                          <img src="public/images/1024_900.jpg" class="img-responsive fill lazyOwl">
                      
                      </div>
 
@@ -173,7 +173,7 @@
                         
                       
 
-                      <img src="public/images/MIJEX-Banner.jpg" class="img-responsive fill">
+                      <img src="public/images/MIJEX-Banner.jpg" class="img-responsive fill lazyOwl">
                      </div>
 
                   </div>

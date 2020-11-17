@@ -43,8 +43,12 @@ $('rt-n').show();
             autoplaySpeed: 12000,
             fluidSpeed:true, 
             loop:true,
-         
+            lazyLoad: true,
+            lazyFollow : true,
             dots:false,
+                responsive: true,
+    responsiveRefreshRate : 200,
+    responsiveBaseWidth: window,
 
            loop:true,
            margin:0,
