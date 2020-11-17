@@ -1010,14 +1010,26 @@ align-items: center;
 
 @media screen and (max-width: 767px) and (orientation : landscape) {
 
+:-webkit-full-screen {
+
+}
+
+/* IE11 */
+:-ms-fullscreen {
+
+}
+
+/* Standard syntax */
+:fullscreen {
+  
+}
+
 body {
 	overflow:hidden;
 }
-
 .rt{
 	display:none;
 }
-
 .mainbanner-sec .slider-sec .fill {
     object-fit: cover;
     width: 100%;
