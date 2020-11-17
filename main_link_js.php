@@ -4,23 +4,6 @@
 <script src="public/js/jquery.marquee.js"></script>
 <script src="public/js/owl.carousel.min.js"></script>
 
- <!-- <script>
-  function myFunction(x) {
-    if (x.matches) { 
-      //alert('For a Better View Please Roate your Mobile');
-$('rt').show();
-$('rt-n').hide();
-    } else {
-$('rt').hide();
-$('rt-n').show();
-    }
-  }
-
-  var x = window.matchMedia("(max-width: 767px) and (orientation : portrait) ")
-  myFunction(x) 
-  x.addListener(myFunction) 
-</script> -->
-
 
 <script type="text/javascript">
   $(function(){
